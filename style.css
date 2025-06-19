@@ -55,7 +55,7 @@ img {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url('../images/food.png') center/cover no-repeat;
+  background:  url('https://raw.githubusercontent.com/sanghavi2611/Restaurant-Page/main/images/food.png')center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
