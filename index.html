@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#menu" class="nav-item">Menu</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </div>
+  </nav>
+ 
+  <!-- Header -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>The <br> velvet table</h1>
+      <a href="#menu" class="btn">See the Menu</a>
+    </div>
+    <div class="hero-tag">Open from 10am to 12pm</div>
+  </header>
+ 
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <h2 class="section-title">The Menu</h2>
+ 
+      <div class="tab-buttons">
+        <button class="tablink active" onclick="openMenu(event, 'Pizza')">Pizza</button>
+        <button class="tablink" onclick="openMenu(event, 'Salads')">Salads</button>
+        <button class="tablink" onclick="openMenu(event, 'Starter')">Starter</button>
+      </div>
+ 
+      <div id="Pizza" class="tab-content active">
+        <div class="menu-item"><h3>Margherita <span>₹300</span></h3><p>Fresh tomatoes, mozzarella, basil</p></div>
+        <div class="menu-item"><h3>Formaggio <span>₹359</span></h3><p>Four cheeses</p></div>
+        <div class="menu-item"><h3>Chicken <span>₹350</span></h3><p>Tomatoes, mozzarella, chicken, onions</p></div>
+        <div class="menu-item"><h3>Pineapple'o'clock <span>₹300</span></h3><p>Tomatoes, mozzarella, pineapple, bacon</p></div>
+        <div class="menu-item"><h3>Meat Town <span>₹400</span></h3><p>Tomatoes, mozzarella, pepperoni, sausage, beef</p></div>
+        <div class="menu-item"><h3>Parma <span>₹360</span></h3><p>Tomatoes, mozzarella, parma, bacon, arugula</p></div>
+      </div>
+ 
+      <div id="Salads" class="tab-content">
+        <div class="menu-item"><h3>Lasagna <span>₹350</span></h3><p>Special sauce, mozzarella, parmesan, beef</p></div>
+        <div class="menu-item"><h3>Ravioli <span>₹370</span></h3><p>Ravioli filled with cheese</p></div>
+        <div class="menu-item"><h3>Spaghetti Classica <span>₹400</span></h3><p>Tomatoes, onions, beef</p></div>
+        <div class="menu-item"><h3>Seafood Pasta <span>₹400</span></h3><p>Salmon, shrimp, lobster, garlic</p></div>
+      </div>
+ 
+      <div id="Starter" class="tab-content">
+        <div class="menu-item"><h3>Today's Soup <span>₹260</span></h3><p>Ask the waiter</p></div>
+        <div class="menu-item"><h3>Bruschetta <span>₹270</span></h3><p>Bread with pesto, tomatoes, garlic</p></div>
+        <div class="menu-item"><h3>Garlic Bread <span>₹170</span></h3><p>Grilled ciabatta, garlic butter</p></div>
+        <div class="menu-item"><h3>Tomozzarella <span>₹200</span></h3><p>Tomatoes and mozzarella</p></div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p>The Pizza Restaurant was founded by Mr. Italiano. We are proud of our authentic flavors and friendly atmosphere.</p>
+      <div class="about-chef">
+        <img src="images/chef.png" alt="Chef" class="chef-img">
+        <p><strong>The Chef?</strong> Mr. Italiano himself.</p>
+      </div>
+      <img src="images/onepage_restaurant.png" alt="Restaurant Interior" class="about-image">
+ 
+      <h3>Opening Hours</h3>
+      <div class="opening-hours">
+        <div>
+          <p>Mon & Tue: CLOSED</p>
+          <p>Wednesday - Thursday: 10:00 - 24:00</p>
+        </div>
+        <div>
+          <p>Friday: 10:00 - 12:00</p>
+          <p>Saturday: 10:00 - 23:00</p>
+          <p>Sunday: CLOSED</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Map -->
+  <img src="images/map.png" alt="Map Location" class="map-image">
+ 
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>Find us at some address or call: <strong>05050515-122330</strong></p>
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="number" name="People" placeholder="How many people" required>
+        <input type="datetime-local" name="date" required>
+        <textarea name="Message" placeholder="Message / Special requirements" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Pizza Restaurant</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
